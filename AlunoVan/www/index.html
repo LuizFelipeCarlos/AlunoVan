@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/Index.css" />
+    <script src="scripts/Index.js"></script>
+    <script defer src="scripts/apiMapa.js"></script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdRswDehHCNP_1p7-cJsFO3Wx_8h996Uc &callback=initMap">
+    </script>
+</head>
+<body>
+
+    <header id="Cabecalho">
+        Cabeçalho
+        <div id="DivCabecalho">
+            <img id="iMenu" class="Imagem" src="images/MenuNSelect.jpg" onclick="ApresentaMenu('Menu', 'iMenu', 'images/MenuNSelect.jpg', 'images/MenuSelect.jpg')" />
+        </div>
+    </header>
+    <div id="container">
+        <nav id="Menu">Menu</nav>
+        <div id="Mapa" class="principal"></div>
+        <div id="Van" class="principal">Van</div>
+        <div id="Aluno" class="principal">Aluno</div>
+        <div id="Mensagem" class="principal">Mensagem</div>
+        <div id="Conta" class="principal">Configuração</div>
+    </div>
+    <footer id="RodaPe">
+        Rodapé
+        <div id="DivRodape">
+            <img id="iMapa" class="Imagem" src="images/MapaNSelect.jpg" onclick="TrocaImagem('iMapa', 'images/MapaSelect.jpg', 'Mapa', 'Aluno', 'Van', 'Mensagem', 'Conta',  'iAluno', 'iVan', 'iMensagem', 'iConta'        ,'images/FilhoNSelect.jpg', 'images/VanNSelect.jpg', 'images/MsgNSelect.jpg', 'images/ConfigNSelect.jpg')" />
+            <img id="iAluno" class="Imagem" src="images/FilhoNSelect.jpg" onclick="    TrocaImagem('iAluno', 'images/FilhoSelect.jpg', 'Aluno', 'Mapa', 'Van', 'Mensagem', 'Conta', 'iMapa',  'iVan', 'iMensagem', 'iConta' , 'images/MapaNSelect.jpg',  'images/VanNSelect.jpg', 'images/MsgNSelect.jpg', 'images/ConfigNSelect.jpg')" />
+            <img id="iVan" class="Imagem" src="images/VanNSelect.jpg" onclick="    TrocaImagem('iVan', 'images/VanSelect.jpg', 'Van', 'Aluno', 'Mapa', 'Mensagem', 'Conta', 'iMapa', 'iAluno',  'iMensagem', 'iConta'       ,'images/MapaNSelect.jpg', 'images/FilhoNSelect.jpg', 'images/MsgNSelect.jpg', 'images/ConfigNSelect.jpg')" />
+            <img id="iMensagem" class="Imagem" src="images/MsgNSelect.jpg" onclick="    TrocaImagem('iMensagem', 'images/MsgSelect.jpg', 'Mensagem', 'Aluno', 'Van', 'Mapa', 'Conta', 'iMapa', 'iAluno', 'iVan',  'iConta'  ,'images/MapaNSelect.jpg', 'images/FilhoNSelect.jpg', 'images/VanNSelect.jpg', 'images/ConfigNSelect.jpg')" />
+            <img id="iConta" class="Imagem" src="images/ConfigNSelect.jpg" onclick="    TrocaImagem('iConta', 'images/ConfigSelect.jpg', 'Conta', 'Aluno', 'Van', 'Mensagem', 'Mapa', 'iMapa', 'iAluno', 'iVan', 'iMensagem','images/MapaNSelect.jpg', 'images/FilhoNSelect.jpg', 'images/VanNSelect.jpg', 'images/MsgNSelect.jpg')" />
+        </div>
+    </footer>
+
+</body>
+
+
+</html>
